@@ -10,6 +10,12 @@ namespace NewHomeWork
     {
         public string doctorName;
 
+        public enum DocSpec
+        {
+            surgeon,
+            dentist,
+            therapist
+        }
         public Doctor() 
         {
         }
