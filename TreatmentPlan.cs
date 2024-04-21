@@ -8,11 +8,17 @@ namespace NewHomeWork
 {
     public class TreatmentPlan
     {
-        int planCode;
+        public int planCode;
         public TreatmentPlan(int planCode)
         {
             this.planCode = planCode;
-            if (planCode == 0 ) { Appo }
+        }
+        public static void TreatmentPlanAdd(Patient patient, int planCode)
+        {
+
+            Console.WriteLine($"Пациенту {patient.patient} назнчен план лечения {planCode} ");
+            patient.AppointTreatmentPlan(planCode);
         }
     }
 }
+

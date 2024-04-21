@@ -16,8 +16,14 @@ namespace NewHomeWork
             dentist,
             therapist
         }
-        public Doctor() 
+        public Doctor(string doctorName) 
         {
+            this.doctorName = doctorName;
+
+        }
+        public void Treat(string doctorName)
+        {
+            Console.WriteLine($"Лечит {doctorName}");
         }
     }
 }

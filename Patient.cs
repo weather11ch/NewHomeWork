@@ -13,7 +13,10 @@ namespace NewHomeWork
         {
             this.patient = patient;
         }
-
+        public Patient(string patient, int planCode)
+        {
+            this.patient = patient;            
+        }
         public void AppointTreatmentPlan(int planCode)
         {
             Console.WriteLine($"Пациенту  {patient} назначен план лечения с кодом {planCode}");
