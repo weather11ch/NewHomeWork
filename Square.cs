@@ -21,5 +21,10 @@ namespace NewHomeWork
         {
             Console.WriteLine($"{color}  квадрат со стороной {sideLength}  и площадью  {squareArea}") ;
         }
+        public void ChangeSideLength(Square square, int newSideLength)
+        {
+            square.sideLength = newSideLength;
+            square.squareArea = newSideLength*newSideLength;
+        }
     }
 }

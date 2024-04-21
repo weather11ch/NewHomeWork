@@ -17,15 +17,9 @@ foreach (var squares in squaresList)
 //просто добавила еще один объект
 Square f4 = new Square(f1.sideLength*2, f2.color);
 squaresList.Add(f4);
+
 //Поменять длину стороны зеленого квадрата = длина стороны синего квадрата * 3
-f1 = new Square(f2.sideLength*3,f1.color);
-
-squaresList.Clear();
-squaresList.Add(f1);
-squaresList.Add(f2);
-squaresList.Add(f3);
-squaresList.Add(f4);
-
+f1.ChangeSideLength(f1, f2.sideLength * 3);
 
 Console.WriteLine("Вывод 2");
 foreach (var squares in squaresList)
