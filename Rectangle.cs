@@ -12,7 +12,7 @@ namespace NewHomeWork
         public Rectangle(int lengthParameter1, int lengthParameter2) : base(lengthParameter1, lengthParameter2)
         {
         }
-        public static void RectanglePerimeter(int lengthParameter1, int lengthParameter2, out int rectanglePerimeter)
+        public static void RectanglePerimeter(int lengthParameter1, int lengthParameter2, out double rectanglePerimeter)
         {
             rectanglePerimeter = 2*(lengthParameter1 + lengthParameter2) ;
             Console.WriteLine($" периметр прямоугольника {rectanglePerimeter}");
